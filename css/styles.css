@@ -44,9 +44,9 @@ img {
 }
 
 .container {
-  max-width: 1128px;
-  padding-left: 0;
-  padding-right: 0;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -111,11 +111,14 @@ img {
   color: var(--primary-brand-color);
 }
 
+.header {
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--accent-color);
 }
 
 .logo-navlinks {
@@ -129,8 +132,6 @@ img {
   gap: 40px;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 23px;
-  padding-bottom: 23px;
 }
 
 .nav-link {
@@ -139,6 +140,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--modal-overlay);
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 
 .nav-link:hover,
@@ -229,6 +233,10 @@ img {
   padding-bottom: 120px;
 }
 
+.feature-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .feature-list {
   display: flex;
   gap: 24px;
@@ -251,6 +259,10 @@ img {
   gap: 24px;
 }
 
+.service-item {
+  width: calc((100% - 48px) / 3);
+}
+
 .team-section {
   background-color: var(--light-backgound);
   padding-top: 120px;
@@ -271,6 +283,7 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-overlay {
